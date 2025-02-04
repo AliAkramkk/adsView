@@ -17,4 +17,4 @@ const verifyToken = (req,res,next) =>{
       }
     };
 
-    module.exports = {generateToken,}
+    module.exports = {generateToken,verifyToken};

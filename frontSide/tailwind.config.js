@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-blue': 'rgba(59, 130, 246, 0.5)',
+      },
+      fontFamily: {
+        'roboto-condensed': ['"Roboto Condensed"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
