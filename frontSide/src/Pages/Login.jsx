@@ -20,9 +20,12 @@ const Login = () => {
     try {
       const response = await loginUser(formData);
       dispatch(login(response));
-      navigate("/"); 
+      if (response.role === 1000) navigate("/admin/dashbord");
+      else if (response.role === 2000) navigate("/customer/dashbord");
+      else if (response.role === 3000) navigate("/user/dashbord");
+      else navigate("/");
     } catch (err) {
-      setError(err.message);
+      setError("Invalid credentials");
     }
   };
 

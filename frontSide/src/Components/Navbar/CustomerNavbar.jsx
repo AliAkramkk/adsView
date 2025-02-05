@@ -50,7 +50,7 @@ onst [isMenuOpen, setIsMenuOpen] = useState(false);
             {/* Navigation Links */}
             <div className="hidden lg:flex items-center space-x-6 text-gray-700 font-roboto-condensed">
               <NavLink
-                to="/"
+                to="/CustomerHome"
                 exact
                 className="text-lg hover:border-b-4 hover:border-yellow-200"
                 style={({ isActive }) => ({
